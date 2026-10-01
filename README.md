@@ -25,3 +25,9 @@ npm run build      # codegen + vite build -> dist/
 
 `render.yaml` defines a **production** (`main`) and **staging** (`develop`) static site.
 Set `NODE_AUTH_TOKEN` (packages:read) and `VITE_API_URL` (backend `/graphql`) per environment.
+
+## Dietary badges
+
+Vegetarian dishes are flagged with a 🌱 badge in the menu, sourced from the
+`veg` field on the shared `MenuItem` type — so the badge can never drift from
+the backend's data.
