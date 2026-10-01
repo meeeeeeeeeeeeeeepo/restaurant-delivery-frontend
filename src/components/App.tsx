@@ -3,6 +3,7 @@ import { useQuery } from 'urql';
 import { MenuQuery } from '../operations';
 import { Cart, type CartLine } from './Cart';
 import { Checkout } from './Checkout';
+import { SupportChat } from './SupportChat';
 
 export function App() {
   const [{ data, fetching, error }] = useQuery({ query: MenuQuery });
@@ -56,6 +57,8 @@ export function App() {
           {cart.length > 0 && <Checkout cart={cart} onDone={() => setCart([])} />}
         </aside>
       </main>
+
+      <SupportChat />
     </div>
   );
 }

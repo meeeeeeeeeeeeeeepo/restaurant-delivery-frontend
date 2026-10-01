@@ -7,8 +7,6 @@ on:
         description: "Release version tag (e.g. v1.2.0)"
         required: true
         default: v1.1.0
-  repository_dispatch:
-    types: [promote-to-prod]   # fired from Slack ("Promote to Production" workflow)
 
 permissions:
   contents: write
